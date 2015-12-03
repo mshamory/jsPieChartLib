@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="./css/main.css" />
+<script src="../PieChartLib.js" type="text/javascript"></script>
+<script src="./js/main.js" type="text/javascript"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pie Chart Generator</title>
+</head>
+<body onresize="resizeCanvas()">
+  <a id="gear" href="#settings"></a>
+  <a id="download" href="#" onclick="downloadImage()" download="pie_chart.png"></a>
+  <section id="content">
+    <canvas id="display" height="1000" width="1000"></canvas>
+  </section>
+  <section id="settings">
+    <div id="general">
+      General Settings: Work in Progress (Canvas Resolution / Padding / Background)
+      <span style="float: right; color: #666">Demo v.0.1.0</span>
+    </div>
+    <div id="items" onchange="draw()">
+      <template>
+        <div class="item">
+          <div>
+            <input type="color" class="color_picker" value="#0080c0">
+            Name:&nbsp;
+            <input type="text" value="Item 1">
+            Percent:&nbsp;
+            <input type="text" value="100">%
+          </div>
+          <a href="#settings" onclick="removeItem(this)">X</a>
+        </div>
+      </template>
+    </div>
+    <div id="addItem" onclick="addItem()">Add Item</div>
+  </section>
+</body>
+</html>
