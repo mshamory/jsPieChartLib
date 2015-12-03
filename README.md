@@ -1,5 +1,9 @@
 # PieChartLib.js
 A small JavaScript library that can be used to draw pie charts on an HTML5 canvas element.
+
+###Demo
+[View Demo](http://mshamory.github.io/jsPieChartLib/demo/)
+
 ###PieChart
 An object that controls the settings of the pie chart and draws it to the canvas.
 
